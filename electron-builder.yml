@@ -1,0 +1,12 @@
+appId: com.igniteae.qmsmonitor
+productName: ignite QMS - Monitor
+copyright: Copyright © 2023 ignite technologies
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null
