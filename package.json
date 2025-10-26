@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "name": "ignite-qms-monitor",
+  "description": "Queue managment system made by igniteae",
+  "version": "1.1.5",
+  "author": "Ignite Technologies <yasser@igniteae.com>",
+  "main": "app/background.js",
+  "build": {
+    "appId": "com.ignite.qmsmonitor",
+    "win": {
+      "icon": "./logoBK.png"
+    },
+    "mac": {
+      "icon": "./logoBK.icns"
+    }
+  },
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "build:win": "nextron build --win --x64",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.15",
+    "axios": "^1.4.0",
+    "custom-electron-prompt": "^1.5.7",
+    "date-fns": "^2.30.0",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0",
+    "flowbite": "^1.6.4",
+    "flowbite-react": "^0.4.2",
+    "moment": "^2.29.4",
+    "react-fast-marquee": "^1.6.2",
+    "react-icons": "^4.8.0",
+    "react-select": "^5.7.2",
+    "recharts": "^2.5.0",
+    "socket.io-client": "^4.7.1",
+    "sweetalert2": "^11.7.10",
+    "swiper": "^9.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "electron": "^21.3.3",
+    "electron-builder": "^23.6.0",
+    "next": "^12.3.4",
+    "nextron": "^8.5.0",
+    "postcss": "^8.4.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.1.8"
+  }
+}
